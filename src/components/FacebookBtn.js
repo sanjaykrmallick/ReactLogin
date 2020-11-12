@@ -63,7 +63,7 @@ import { addUser } from "../redux/actions/user-data";
               {!isLogined && (
                 <FacebookLogin
                   appId='4068078003209036'
-                  autoLoad={true}
+                  autoLoad={false}
                   fields='name,email,picture'
                   scope='public_profile,user_friends'
                   callback={this.responseFacebook}
